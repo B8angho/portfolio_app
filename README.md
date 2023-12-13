@@ -27,6 +27,6 @@
 
 ---
 
-# ToDO
+# ToDo
 
 Youtube 태그 -> 데모 페이지로 교체
