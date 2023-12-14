@@ -14,12 +14,12 @@ export default function ProjectItem({ data }) {
     const startDateStringArray = start.split("-");
     const endDateStringArray = end.split("-");
 
-    var startDate = new Date(
+    let startDate = new Date(
       startDateStringArray[0],
       startDateStringArray[1],
       startDateStringArray[2]
     );
-    var endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
+    let endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
 
     console.log(`startDate: ${startDate}`);
     console.log(`endDate: ${endDate}`);
@@ -55,8 +55,9 @@ export default function ProjectItem({ data }) {
         <div className="flex flex-wrap items-start mt-2">
           {tags.map((aTag) => (
             <h1
-              className="px-2 py-1 mr-2 mb-2 rounded-md bg-green-200 dark:bg-green-600 w-30"
+              className="px-2 py-1 mr-2 mb-2 rounded-md"
               key={aTag.id}
+              style={{ backgroundColor: getColorValue(aTag.name) }}
             >
               {aTag.name}
             </h1>
@@ -66,3 +67,20 @@ export default function ProjectItem({ data }) {
     </div>
   );
 }
+
+export const getColorValue = (name) => {
+  switch (name) {
+    case "HTML":
+      return "#E34F26";
+    case "CSS":
+      return "#1572B6";
+    case "JAVASCRIPT":
+      return "#F7DF1E";
+    case "Next":
+      return "#000000";
+    case "React":
+      return "#61DAFB";
+    default:
+      return "#CCCCCC";
+  }
+};
