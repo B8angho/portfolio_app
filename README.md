@@ -27,4 +27,6 @@
 
 ---
 
+데모페이지 : https://bh-portfolio-virid.vercel.app/
+
 next.js가 vercel에서 만든 거라 netlify 말고 vercel 선택 but, 취향차이
