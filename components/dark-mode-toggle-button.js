@@ -6,6 +6,7 @@ export default function DarkModeToggleButton() {
   const { theme, setTheme } = useTheme();
   return (
     <>
+      {/* light 모드일 때 Text 컬러 수정하기 12/27*/}
       <button
         className="
                 inline-flex items-center

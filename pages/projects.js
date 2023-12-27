@@ -4,7 +4,6 @@ import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
 
 export default function Projects({ projects }) {
-
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10">
@@ -17,6 +16,7 @@ export default function Projects({ projects }) {
           총 프로젝트 :<span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h1> */}
 
+        {/* 프로젝트 한 개씩 보이게 수정 하기 12/27 */}
         <div className="grid grid-cols-1 gap-5 p-5 m-5 md:grid-cols-3 sm:grid-cols-2">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
