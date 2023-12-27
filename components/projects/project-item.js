@@ -67,7 +67,7 @@ export default function ProjectItem({ data }) {
     </div>
   );
 }
-
+// 스택별 색깔을 다르게 할지 통일할지 고민 12/27
 export const getColorValue = (name) => {
   switch (name) {
     case "HTML":
