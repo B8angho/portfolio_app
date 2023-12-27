@@ -4,7 +4,6 @@ import { TOKEN, DATABASE_ID } from "../config";
 import ProjectItem from "../components/projects/project-item";
 
 export default function Projects({ projects }) {
-  console.log(projects);
 
   return (
     <Layout>
