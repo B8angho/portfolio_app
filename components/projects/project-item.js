@@ -54,11 +54,7 @@ export default function ProjectItem({ data }) {
         </p>
         <div className="flex flex-wrap items-start mt-2">
           {tags.map((aTag) => (
-            <h1
-              className="px-2 py-1 mr-2 mb-2 rounded-md"
-              key={aTag.id}
-              style={{ backgroundColor: getColorValue(aTag.name) }}
-            >
+            <h1 className="px-2 py-1 mr-2 mb-2 rounded-md" key={aTag.id}>
               {aTag.name}
             </h1>
           ))}
@@ -67,20 +63,3 @@ export default function ProjectItem({ data }) {
     </div>
   );
 }
-// 스택별 색깔을 다르게 할지 통일할지 고민 12/27
-export const getColorValue = (name) => {
-  switch (name) {
-    case "HTML":
-      return "#E34F26";
-    case "CSS":
-      return "#1572B6";
-    case "JAVASCRIPT":
-      return "#F7DF1E";
-    case "Next":
-      return "#000000";
-    case "React":
-      return "#61DAFB";
-    default:
-      return "#CCCCCC";
-  }
-};
