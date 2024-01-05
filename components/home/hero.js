@@ -10,14 +10,10 @@ export default function Hero() {
           Byeongho Jeon
         </h1>
         <h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            <br></br>
-            incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis
-            <br></br>
-            hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit
-            <br></br>
-          </p>
+          끊임없이 변화하는 세상의 중심이 되고 싶은
+          <br></br>
+          개발자, <b>전병호</b>입니다. <span>[추가작성]</span>
+          <br></br>
         </h2>
         <br></br>
         <div className="flex justify-center">

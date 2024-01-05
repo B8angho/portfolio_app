@@ -19,7 +19,7 @@
 }
 
 .project-card {
-  @apply flex flex-col rounded-xl w-auto
+  @apply flex flex-col rounded-xl
             transition duration-300 transform border border-gray-300
             hover:scale-105
             hover:shadow-lg
